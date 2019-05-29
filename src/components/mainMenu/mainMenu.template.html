@@ -1,0 +1,12 @@
+<nav class="nav">
+  <ul class="menu">
+    <li ng-repeat="item in vm.menuItems" class="menu-item">
+      <a ng-class="{'active': item.isActive}" href="{{ item.href }}">
+        <div class="tile tile-centered">
+          <div class="tile-icon"><i class="icon {{ item.icon }}"></i></div>
+          <div class="tile-content">{{ item.title }}</div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,36 @@
+body {
+  overflow: initial !important;
+}
+.main {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 1fr 40px;
+  grid-template-areas:
+    'header header'
+    'nav container'
+    'footer footer';
+  width: 1024px;
+  height: 100vh;
+  margin: auto;
+  grid-gap: 1rem;
+}
+
+header-nav {
+  grid-area: header;
+}
+
+header {
+  height: 100%;
+}
+
+main-menu {
+  grid-area: nav;
+}
+
+.container {
+  grid-area: container;
+}
+
+.footer {
+  grid-area: footer;
+}
